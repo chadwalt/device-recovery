@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $title = 'Device Recovery';
+    return view('index')->with('title', $title);
 });
